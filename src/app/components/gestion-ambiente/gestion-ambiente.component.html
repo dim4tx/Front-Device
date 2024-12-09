@@ -1,0 +1,8 @@
+<div class="ambientes-container">
+  <div *ngFor="let ambiente of ambientes" class="ambiente-card">
+    <h3>{{ ambiente.name }}</h3>
+    <p [ngClass]="{'available': ambiente.available, 'not-available': !ambiente.available}">
+      {{ ambiente.available ? 'Disponible' : 'No disponible' }}
+    </p>
+  </div>
+</div>

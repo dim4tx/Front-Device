@@ -1,0 +1,8 @@
+<div class="home-container">
+  <div *ngFor="let Activo_Equipo of Activos_Equipos" class="device-card">
+    <h3 class="device-header">{{ Activo_Equipo.tipo }} - {{ Activo_Equipo.marca }} {{ Activo_Equipo.modelo }}</h3>
+    <p class="device-body">Color: {{ Activo_Equipo.color }}</p>
+    <p class="device-body">Zona ID: {{ Activo_Equipo.zonaId }}</p>
+    <p class="device-body">Responsable ID: {{ Activo_Equipo.responsableId }}</p>
+  </div>
+</div>
